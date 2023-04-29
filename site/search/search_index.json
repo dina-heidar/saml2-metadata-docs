@@ -1,0 +1,1 @@
+{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"Saml2 Metadata","text":"<p>This tool that can be used with any .Net Core applications to create service provider metadata xml files. This tool is not dependent on any .NET Framework libraries. </p> <p>Documentation coming soon.....</p>"}]}

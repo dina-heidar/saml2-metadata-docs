@@ -1,0 +1,102 @@
+site_name: Saml2 Metadata
+repo_url: https://github.com/dina-heidar/saml2-metadata
+repo_name: dina-heidar/saml2-metadata
+copyright: Copyright &copy; 2023 Dina Heidar
+
+nav:
+  - Home: "index.md"
+  # - Download: saml2-metadata.pdf 
+
+extra:  
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/@dina_heidar
+      name: Dina Heidar on Twitter
+    - icon: fontawesome/brands/github
+      link: https://github.com/dina-heidar
+      name: Dina Heidar on GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/dina-heidar-072b28aa
+      name: Dina Heidar on LinkedIn
+
+theme:
+  name: material
+  logo: assets/icon_128x128.png
+  favicon: images/favicon.png
+  language: en
+  font:
+    text: Public Sans  
+  features:
+    - navigation.tabs
+    - navigation.tracking
+    - navigation.instant
+    - navigation.tabs.sticky
+    - navigation.footer
+    - navigation.top    
+    - navigation.expand
+    - navigation.sections
+    - toc.integrate
+    - content.code.copy
+    - content.tabs.link
+  palette:  
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+markdown_extensions:
+  - toc:
+      toc_depth: 5
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - tables
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra_javascript:
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js
+
+plugins:
+   - search
+  #  - with-pdf:
+  #     author: Dina Heidar
+  #     cover_title: Saml2 Authentication
+  #     cover_subtitle: Technical Documentation v6.1.2  
+  #     cover_logo: ./assets/icon_500x500.png
+  #     toc_title: Table of contents
+  #     #back_cover: true
+  #     toc_level: 2      
+  #     two_columns_level: 0
+  #     #render_js: true
+  #     #headless_chrome_path: google-chrome      
+  #     output_path: saml2-authentication.pdf     
+
+
+
